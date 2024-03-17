@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test" parallel="classes">
+	  <groups>    
+		  <run>
+			  <include name="smoke"></include>
+			  <exclude name="regression"></exclude>
+		  </run>
+	  </groups>
+    <classes>
+      <class name="Bike_Website.Yamaha"/>
+      <class name="Shoe_Website.Liberty"/>
+      <class name="Bike_Website.Bajaj"/> 
+      <class name="Shoe_Website.New_Balance"/>
+      <class name="Bike_Website.Honda"/>
+      <class name="Bike_Website.TVS"/>
+      <class name="Shoe_Website.Addidas"/>
+      <class name="Shoe_Website.Red_Tape"/>
+      <class name="Bike_Website.Royal_enfield"/>
+      <class name="Shoe_Website.Nike"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
